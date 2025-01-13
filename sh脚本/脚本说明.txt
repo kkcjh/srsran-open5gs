@@ -1,0 +1,9 @@
+capture_packet.sh：使用wireshark循环抓包，可配置循环抓包周期
+deleteNetworkData.sh：自动删除抓包数据，使得抓包数据占用空间不会无限大，可配置抓包数据占用内存空间范围
+nat.sh：UPF网元数据转发规则，可控制RBC观测到的IP地址是仿真网络机器的IP或是电台拿到的IP
+rungnb.sh：运行基站，断开后自动再次执行
+runopen5gs.sh：运行核心网
+stopopen5gs.sh：关闭核心网
+start.sh：开启仿真网络（包含基站+核心网+nat配置+抓包功能），此后需要重启网络再次执行本脚本即可
+stop.sh：关闭仿真网络
+以上各个脚本需要注意对应的文件目录
